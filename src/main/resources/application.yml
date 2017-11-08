@@ -1,0 +1,12 @@
+spring:
+ profiles:
+   active: dev
+ datasource:
+   driver-class-name: com.mysql.jdbc.Driver
+   url: jdbc:mysql://127.0.0.1:3306/dbgirl
+   username: root
+   password: 1234
+ jpa:
+   hibernate:
+     ddl-auto: update ## 若update改为create 则原来的表中的有表的话 会把原表删除重新创建一张新的表
+   show-sql: true
